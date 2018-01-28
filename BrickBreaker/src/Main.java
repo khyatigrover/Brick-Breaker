@@ -18,7 +18,7 @@ public class Main extends JFrame implements ActionListener, KeyListener {
 	private boolean play = false;
 	private int totalbricks = 24;
 	private int score = 0;
-	private int delay = 30; // delay means ki after every 60ms(or any other
+	private int delay = 30; // delay means that after every 30ms(or any other
 							// unit),actionPerformed function will be called
 	private Timer time = new Timer(delay, this);// for adding parameters in the
 												// timer constructor ,we have to
@@ -43,7 +43,7 @@ public class Main extends JFrame implements ActionListener, KeyListener {
 		
 		this.setResizable(false);
 		this.setVisible(true);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // if i click the
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);                                                            // if i click the
 																// cross button
 																// in the
 																// frame,JFrame
@@ -100,7 +100,7 @@ public class Main extends JFrame implements ActionListener, KeyListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {// this method is called after
-												// every delay(here,6ms)by the
+												// every delay(here,3ms)by the
 												// timer
 
 		if (play == true) {
